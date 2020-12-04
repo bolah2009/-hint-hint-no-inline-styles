@@ -1,0 +1,7 @@
+*.pid
+.vscode
+dist/
+node_modules/
+.nyc_output/
+hint-report
+coverage
