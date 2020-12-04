@@ -1,0 +1,20 @@
+name: Test
+
+on: pull_request
+
+env:
+  FORCE_COLOR: 1
+
+jobs:
+  eslint:
+    name: Test
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Setup Test
+        run: npm i
+      - name: Test Report
+        run: npm run test
