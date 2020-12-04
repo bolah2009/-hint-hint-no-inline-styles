@@ -44,7 +44,7 @@
   ],
   "license": "Apache-2.0",
   "main": "dist/src/no-inline-styles.js",
-  "name": "@hint/hint-no-inline-styles",
+  "name": "hint-no-inline-styles",
   "nyc": {
     "extends": ".nycrc"
   },
@@ -64,11 +64,11 @@
     "watch:test": "nyc ava --watch",
     "init": "npm install && npm run build",
     "watch:ts": "npm run build:ts -- --watch",
-    "hint": "node node_modules/hint/dist/src/bin/hint.js"
+    "hint-no-inline-styles": "node node_modules/hint/dist/src/bin/hint.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/bolah2009/hint-no-inline-styles"
   },
   "version": "1.0.0"
 }
